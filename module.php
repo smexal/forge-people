@@ -18,6 +18,7 @@ class Module extends AbstractModule {
     }
 
     public function start() {
+        Loader::instance()->loadDirectory($this->directory().'classes/components/');
         Loader::instance()->loadDirectory($this->directory().'classes/collections/');
     }
 
