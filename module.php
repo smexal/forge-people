@@ -2,9 +2,9 @@
 
 namespace Forge\Modules\People;
 
+use \Forge\Core\App\App;
 use \Forge\Core\Abstracts\Module as AbstractModule;
 use \Forge\Loader;
-
 use function \Forge\Core\Classes\i;
 
 class Module extends AbstractModule {
@@ -20,6 +20,9 @@ class Module extends AbstractModule {
     public function start() {
         Loader::instance()->loadDirectory($this->directory().'classes/components/');
         Loader::instance()->loadDirectory($this->directory().'classes/collections/');
+
+        // frontend css
+        App::instance()->tm->theme->addStyle(MOD_ROOT."forge-people/assets/css/listing.less");
     }
 
 }
