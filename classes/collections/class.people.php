@@ -4,7 +4,7 @@ namespace Forge\Modules\People\Collection;
 
 use \Forge\Core\Abstracts\DataCollection;
 
-use function \Forge\Core\Classes\i;
+
 
 class People extends DataCollection {
     public $permission = "manage.forge-people";

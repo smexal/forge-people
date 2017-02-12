@@ -5,7 +5,7 @@ namespace Forge\Modules\People;
 use \Forge\Core\Abstracts\Module as AbstractModule;
 use \Forge\Loader;
 
-use function \Forge\Core\Classes\i;
+
 
 class Module extends AbstractModule {
 
@@ -18,7 +18,6 @@ class Module extends AbstractModule {
     }
 
     public function start() {
-        Loader::instance()->loadDirectory($this->directory().'classes/collections/');
     }
 
 }
