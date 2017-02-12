@@ -1,6 +1,6 @@
 <?php
 
-namespace Forge\Modules\People\Collection;
+namespace Forge\Modules\People;
 
 use \Forge\Core\Abstracts\DataCollection;
 

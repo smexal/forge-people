@@ -1,14 +1,13 @@
 <?php
 
-namespace Forge\Modules\People\Components;
+namespace Forge\Modules\People;
 
 use Forge\Core\Classes\Media;
 use \Forge\Core\Abstracts\Components;
 use \Forge\Core\App\App;
-use \Forge\Core\Components\Listing;
-use function \Forge\Core\Classes\i;
+use \Forge\Core\Components\ListingComponent;
 
-class PeoplelistingComponent extends Listing {
+class PeoplelistingComponent extends ListingComponent {
     protected $collection = 'forge-people';
 
     public function prefs() {
