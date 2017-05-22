@@ -18,9 +18,8 @@ class Module extends AbstractModule {
     }
 
     public function start() {
-        // frontend css
-        App::instance()->tm->theme->addStyle(MOD_ROOT."forge-people/assets/css/listing.less");
-
+        // add listing frontend css to the theme
+        App::instance()->tm->theme->addStyle(CORE_ROOT."ressources/css/blocks/listing.less");
     }
 
 }
