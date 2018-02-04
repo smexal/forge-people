@@ -9,6 +9,7 @@ use \Forge\Core\Components\ListingComponent;
 
 class PeoplelistingComponent extends ListingComponent {
     protected $collection = 'forge-people';
+    protected $cssClasses = ['wrapper', 'reveal'];
 
     public function prefs() {
         return array(
