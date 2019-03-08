@@ -15,11 +15,9 @@ class PeopleCollection extends DataCollection {
         $this->preferences['all-title'] = i('Manage people', 'forge-people');
         $this->preferences['add-label'] = i('Add person', 'forge-people');
         $this->preferences['single-item'] = i('People', 'forge-people');
-
-        $this->custom_fields();
     }
 
-    private function custom_fields() {
+    public function custom_fields() {
         $this->addFields([
             [
                 'key' => 'image',
